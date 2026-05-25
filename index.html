@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simplifica - IA</title>
+    <style>
+        body {
+            /* Fundo preto esverdeado */
+            background-color: #071a12; 
+            /* Letras brancas */
+            color: #ffffff; 
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px;
+        }
+        
+        .logo-container img {
+            max-width: 200px;
+            /* Certifique-se de que o nome da imagem aqui seja exatamente igual ao do arquivo que você vai subir */
+            border-radius: 8px;
+        }
+
+        h1 {
+            /* Destaques em verde claro */
+            color: #a8ffb2; 
+        }
+
+        #chat-box {
+            background-color: #0b261b;
+            border: 1px solid #144531;
+            padding: 20px;
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #a8ffb2;
+            color: #071a12;
+            border: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background-color: #8ce696;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logo-container">
+        <img src="sua-logo.png" alt="Logo Simplifica">
+    </div>
+
+    <h1>Bem-vindo ao Simplifica</h1>
+    <p>Faça sua pergunta para a IA:</p>
+
+    <div id="chat-box">
+        <p id="resposta">Aguardando comando...</p>
+    </div>
+    
+    <button onclick="chamarIA()">Consultar Gemini</button>
+
+    <script>
+        // Aqui entrará o código em JavaScript do Google AI Studio futuramente
+        function chamarIA() {
+            document.getElementById('resposta').innerText = "Conectando com o Google AI Studio...";
+        }
+    </script>
+</body>
+</html>
